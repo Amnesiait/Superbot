@@ -1,0 +1,23 @@
+{
+  "bucket_stats": {
+    "XAUUSD": {
+      "bucket_id": "XAUUSD",
+      "positions": [],
+      "net_profit": 3.5,
+      "open_time": 1769530731.5075538,
+      "last_update": 1769531075.6100924,
+      "closed": true,
+      "state": "closed",
+      "mode": "single",
+      "last_state_check": 1769531075.6101062,
+      "exit_reason": "TP_EXIT",
+      "last_recovery_time": 0.0
+    }
+  },
+  "closed_buckets": [
+    "XAUUSD"
+  ],
+  "active_learning_trades": {},
+  "timestamp": 1769531075.6101289,
+  "slippage_samples_per_lot_usd": {}
+}

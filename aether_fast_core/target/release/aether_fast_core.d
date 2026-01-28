@@ -1,0 +1,1 @@
+C:\Users\MacBookPro\Documents\Trading\Scalping--Version-latest-main\aether_fast_core\target\release\aether_fast_core.dll: C:\Users\MacBookPro\Documents\Trading\Scalping--Version-latest-main\aether_fast_core\src\lib.rs

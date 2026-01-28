@@ -1,0 +1,93 @@
+>>> AETHER BOOT SEQUENCE INITIATED AT 2026-01-27 17:41:53.935025
+>>> WAITING FOR CORE SYSTEMS...
+
+2026-01-27 17:42:06,632 - Security - INFO - [SECURITY] License verified. Type: TRIAL. Owner: Developer Mode
+>>> [INIT] NUCLEO RUST CARGADO: Microestructura HFT Activada
+======================================================================
+>> AETHER Trading Bot Startup Sequence (v7.0.0)
+======================================================================
+
+[2/5] Clearing Python cache...
+[CACHE] Cleared 544 cache items (ensuring fresh code)
+
+[3/5] Verifying bot version...
+
+[4/5] Checking system status...
+
+[5/5] Initializing AI optimization system...
+>> [INIT] Initializing Bayesian Tuner...
+2026-01-27 17:42:08,904 - Launcher - INFO - Bayesian Tuner Active.
+>> [OK] Bayesian Tuner Ready
+
+======================================================================
+[OK] All startup checks passed. Starting main bot...
+======================================================================
+
+\n🚀 AETHER v7.0.0 | Initializing...
+2026-01-27 17:42:10,404 - AetherBot - INFO - [WIRING] Bayesian Tuner Connected to Bot Context
+2026-01-27 17:42:10,404 - AetherBot - INFO - AETHER Bot initialized
+2026-01-27 17:42:10,407 - AetherBot - INFO - [OK] Configuration validation passed
+2026-01-27 17:42:10,407 - AetherBot - INFO - 1. Connecting to Broker...
+2026-01-27 17:42:10,415 - MT5Adapter - INFO - [MT5] Successfully latched onto active terminal (Soft Connect).
+2026-01-27 17:42:10,415 - MT5Adapter - INFO - [MT5] Already logged into the correct account: 447798996
+2026-01-27 17:42:10,415 - MT5Adapter - INFO - [MT5] Connected: Account #447798996 | Server: Dukascopy-demo-mt5-1
+2026-01-27 17:42:10,415 - MT5Adapter - INFO - [MT5] Balance: $10046.62 | Equity: $10046.62
+2026-01-27 17:42:10,415 - MT5Adapter - INFO - [MT5] Trade Mode: REAL
+2026-01-27 17:42:10,416 - MT5Adapter - INFO - [MT5] Trade Allowed: True
+2026-01-27 17:42:10,416 - AetherBot - INFO - 2. Initializing Market Data & Position Manager...
+2026-01-27 17:42:10,416 - TradeAuthority - INFO - [SUPREME COURT] Trade Authority Initialized. The Law is active (Strict Limits).
+2026-01-27 17:42:10,425 - AetherBot - INFO - 3. Synchronizing Positions...
+2026-01-27 17:42:10,426 - AetherBot - INFO - [SYNC] Position manager synchronized with broker: 0 active positions
+2026-01-27 17:42:10,426 - AetherBot - INFO - 4. Connecting to Database...
+2026-01-27 17:42:10,426 - AsyncDatabase - INFO - Initializing async SQLite manager...
+2026-01-27 17:42:10,426 - AetherBot - INFO - 5. Initializing AI Core (This is the heavy part)...
+>>> [INIT] Loading PPO Guardian (Reinforcement Learning)...
+2026-01-27 17:42:10,426 - PPOGuardian - INFO - Initializing PPO Neural Network...
+C:\Users\MacBookPro\Documents\Trading\Scalping--Version-latest-main\venv\Lib\site-packages\gymnasium\spaces\box.py:236: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+C:\Users\MacBookPro\Documents\Trading\Scalping--Version-latest-main\venv\Lib\site-packages\gymnasium\spaces\box.py:306: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+2026-01-27 17:42:10,428 - PPOGuardian - INFO - Loading trained PPO brain from models/ppo_guardian.zip
+C:\Users\MacBookPro\Documents\Trading\Scalping--Version-latest-main\venv\Lib\site-packages\stable_baselines3\common\on_policy_algorithm.py:150: UserWarning: You are trying to run PPO on the GPU, but it is primarily intended to run on the CPU when not using a CNN policy (you are using ActorCriticPolicy which should be a MlpPolicy). See https://github.com/DLR-RM/stable-baselines3/issues/1245 for more info. You can pass `device='cpu'` or `export CUDA_VISIBLE_DEVICES=` to force using the CPU.Note: The model will train, but the GPU utilization will be poor and the training might take longer than on CPU.
+  warnings.warn(
+2026-01-27 17:42:16,362 - PPOGuardian - INFO - PPO Guardian Online: Level 5 Self-Learning Active.
+2026-01-27 17:42:16,362 - PPOGuardian - INFO - [AUTO-TRAIN] Enabled: Will retrain every 100 trades
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>> [INIT] PPO Guardian Online.
+>>> [INIT] Loading Global Brain (Macro Analysis)...
+2026-01-27 17:42:16,362 - GlobalBrain - INFO - [GLOBAL BRAIN] Initialized with 2 correlation pairs
+>>> [INIT] Global Brain Online.
+>>> [INIT] Loading Oracle (Price Prediction)...
+2026-01-27 17:42:16,388 - Oracle - WARNING - [ORACLE] Model checkpoint version mismatch (old v1 with 5 features detected).
+2026-01-27 17:42:16,388 - Oracle - WARNING - [ORACLE] Creating fresh model with 12 features. Previous weights discarded.
+2026-01-27 17:42:16,388 - Oracle - INFO - [ORACLE] Fresh Nexus Transformer V2 (12-feature) ready for training on cuda
+>>> [INIT] Oracle Online.
+>>> [INIT] Starting Trading Engine...
+2026-01-27 17:42:16,401 - RegimeDetector - INFO - [REGIME DETECTOR] AI Layer 11 Online
+2026-01-27 17:42:16,401 - Supervisor - INFO - [SUPERVISOR] Agent Initialized with Geometrician Engine
+2026-01-27 17:42:16,402 - NewsCalendar - INFO - Loaded 2 news events.
+2026-01-27 17:42:16,402 - TrapHunter - INFO - [INIT] Trap Hunter Module Online. Scanning for Institutional Traps...
+2026-01-27 17:42:16,402 - MultiHorizonPredictor - INFO - MultiHorizonPredictor initialized
+2026-01-27 17:42:16,403 - RiskGovernor - INFO - RiskGovernor initialized: Max Exposure=15.0%, Max Drawdown=20.0% (Valkyrie Trigger), Dynamic Position Limit=2 per $1k
+2026-01-27 17:42:16,403 - TradeAuthority - INFO - [SUPREME COURT] Trade Authority Initialized. The Law is active (Strict Limits).
+2026-01-27 17:42:16,407 - ModelMonitor - INFO - [MODEL MONITOR] Initialized (threshold: 52.0%, min_samples: 100)
+>>> [INIT] Trading Engine Ready.
+2026-01-27 17:42:16,407 - AetherBot - INFO - [INTEGRATION] Model monitor connected to Oracle
+>>> [INIT] Initializing Database...
+2026-01-27 17:42:16,409 - AsyncDatabase - INFO - Connected to async SQLite: data/market_memory.db
+2026-01-27 17:42:16,410 - AsyncDatabase - INFO - Async SQLite schema initialized
+2026-01-27 17:42:16,410 - AsyncDatabase - INFO - Async database queue started
+>>> [INIT] Database Initialized.
+2026-01-27 17:42:16,410 - AetherBot - INFO - 6. Finalizing Setup...
+>>> [INIT] Initializing Legacy Components...
+2026-01-27 17:42:16,411 - AetherBot - INFO - Initializing legacy AI components (Nexus Brain, Iron Shield)...
+2026-01-27 17:42:16,411 - MarketMemory - INFO - Initializing SQLite Memory...
+2026-01-27 17:42:16,411 - MarketMemory - INFO - Connected to Market Memory: data/market_memory.db
+2026-01-27 17:42:17,246 - SupabaseAdapter - INFO - [OK] Supabase Adapter Initialized
+>>> [INIT] Legacy Components Initialized.
+2026-01-27 17:42:17,246 - AetherBot - INFO - [OK] All components initialized successfully
+2026-01-27 17:42:17,246 - AetherBot - INFO - [INFO] AETHER Trading System Online
+>>> [SYSTEM] Bot is Running. Waiting for market data...
+2026-01-27 17:42:17,246 - AetherBot - INFO - ==================================================
+>>> [DEBUG] Entering Main Loop...

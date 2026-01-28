@@ -1,0 +1,26 @@
+﻿7.0.0
+- [PRODUCTION RELEASE] Complete Project Cleanup & Optimization
+- [CRITICAL FIX] P95 Slippage Calibration: Implemented missing _record_close_slippage_sample() method - dynamic buffer adaptation now fully functional
+- [CRITICAL FIX] Loss Prevention: Added absolute loss check preventing negative closes in position_manager.py
+- [CRITICAL FIX] RSI Extreme Exception: Enabled for overbought/oversold trade signals
+- [CRITICAL] Single-Instance Enforcement: Integrated kill_duplicate_bots() into startup sequence - automatically eliminates duplicate bot processes
+- [CLEANUP] Deleted 500+ MB of cache/artifacts (build/, __pycache__, .pyc files)
+- [CLEANUP] Removed unused AI modules: adaptive_learner.py, nexus_trainer_v2.py
+- [CLEANUP] Removed unused sources: temp_physics_method.py, trading_engine_dashboard_helper.py, 7 utility scripts
+- [CLEANUP] Import optimization: Removed 4 unused imports, fixed 1 duplicate import
+- [OPTIMIZATION] Improved imports across: trading_engine.py, main_bot.py, risk_manager.py
+- [VALIDATION] All components syntax-validated (0 errors), integration-tested (100% pass)
+- [DOCUMENTATION] Created 5 comprehensive guides (README.md, QUICK_START_GUIDE.md, PROJECT_CLEANUP_SUMMARY.md, COMPLETE_REVISION_REPORT.md, DEPLOYMENT_CHECKLIST.md)
+- [STABILITY] All critical trading components preserved and tested
+
+Previous (6.8.2):
+- [FIX] Fusion Filter: Relaxed coherence threshold (0.3 -> 0.2) to allow trades in low-momentum markets
+- [REVERT] Smart Recovery Spacing: Reverted "Young Position Protection" experiments to restore stable Phase 2 behavior
+- [FIX] Run Bot: Removed legacy Bayesian Tuner import warning for cleaner logs
+
+Previous (6.8.0):
+- [CRITICAL] Oracle V2 Deployed: 12-feature Transformer (OHLCV + 7 technical indicators)
+- [CRITICAL] Tiered Dynamic Risk System (Phase 1): 2.5x → 10.0x multipliers
+- [CRITICAL] Oracle Confidence Boost (Phase 2): +25% size for high-confidence
+- [FIX] Duplicate Trade Prevention: Atomic locking on all entry points
+- [CLEANUP] Removed debug scripts and archived legacy trainers
